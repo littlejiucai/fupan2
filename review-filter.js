@@ -1,0 +1,1 @@
+const q=document.querySelector('#stockSearch');if(q){q.addEventListener('input',()=>{const v=q.value.toLowerCase();let n=0;document.querySelectorAll('#watchTable tbody tr').forEach(r=>{const ok=r.innerText.toLowerCase().includes(v);r.hidden=!ok;if(ok)n++});const c=document.querySelector('#rowCount');if(c)c.textContent='显示'+n+'只';});}

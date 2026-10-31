@@ -1,0 +1,532 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>2026-10-19｜修复之后的分歧，跌停扩散｜龙空龙模式研究手记</title><style>:root{--ink:#152840;--muted:#63748b;--blue:#315d9b;--light:#eff3f8;--border:#d9e2ee;--white:#fff;--up:#c7474b;--down:#187969}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#edf1f6;color:var(--ink);font:16px/1.8 "Microsoft YaHei","PingFang SC",sans-serif}a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}.top{background:linear-gradient(120deg,#132d50,#395d8e);color:white;padding:44px max(24px,calc((100vw - 1200px)/2));}.top .kicker{letter-spacing:.12em;color:#c1d4ec;font-size:13px}h1{font-size:clamp(27px,4vw,43px);line-height:1.2;margin:10px 0 12px}.top p{margin:0;color:#d3e1f3}.layout{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:210px minmax(0,1fr);gap:28px;padding:28px 20px}nav{position:sticky;top:20px;align-self:start;border-radius:16px;background:#fff;padding:18px;border:1px solid var(--border)}nav b{display:block;margin:0 9px 10px}nav a{display:block;font-size:14px;padding:7px 9px;border-radius:7px}nav a:hover{background:#edf3fb;text-decoration:none}.section{background:#fff;border:1px solid var(--border);border-radius:18px;box-shadow:0 8px 30px #203a5a0a;padding:26px 30px;margin:0 0 24px;scroll-margin-top:16px}.sectionhead{display:flex;align-items:center;gap:14px;border-bottom:1px solid #e6ebf2;padding-bottom:14px;margin-bottom:17px}.index{color:#8ba0bc;font-size:14px}h2{font-size:23px;line-height:1.3;margin:0;flex:1}.up{font-size:21px}p{margin:13px 0}strong{color:#183960}ul{padding-left:22px}li{margin:9px 0}.summary{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}.summary a,.summary button{border:0;border-radius:9px;padding:10px 15px;background:#e8f0fb;color:#214b82;font:inherit;cursor:pointer}.table-block{margin:18px 0 22px}.table-tools{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 0;color:var(--muted);font-size:13px}input{font:inherit;border:1px solid #cbd9e9;padding:7px 9px;border-radius:7px}button{font:inherit}.clear-filter{border:1px solid #d3deea;background:white;border-radius:6px;color:#315d9b;padding:5px 10px;cursor:pointer}.scroll{overflow:auto;border:1px solid var(--border);border-radius:10px}table{width:100%;border-collapse:collapse;min-width:520px;font-size:14px}th{background:#eaf0f7;text-align:left}th,td{padding:11px 12px;border-bottom:1px solid #e8edf4;vertical-align:top}tr:last-child td{border-bottom:0}tbody tr:nth-child(even){background:#f8fafc}.sort{background:transparent;border:0;text-align:left;color:inherit;font-weight:bold;cursor:pointer;padding:0}.sort span{color:#8094ab}code{background:#f1f4f8;border-radius:4px;padding:2px 4px;font-size:12px;overflow-wrap:anywhere}.section p,.section li,.kv td{overflow-wrap:break-word}.foot{color:var(--muted);font-size:13px;text-align:center;padding:0 10px 32px}.tagline{display:inline-block;background:#eef4fb;border:1px solid #d7e4f2;color:#2c5687;border-radius:99px;padding:2px 10px;font-size:13px;margin:0 6px 6px 0}.note{background:#f7fafd;border-left:3px solid #9dbad8;padding:10px 14px;border-radius:0 8px 8px 0;color:#41597a;font-size:14px}.objcard{border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin:14px 0;background:#fdfefe}.objhead{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:8px}.objhead b{font-size:16px}.kv{font-size:14px;min-width:0;margin:0}.kv th{width:92px;white-space:nowrap;background:#f4f7fb;font-weight:600;color:#33507a}.kv td,.kv th{padding:8px 10px}.warn{background:#fff7ec;border-left:3px solid #d9a441;padding:10px 14px;border-radius:0 8px 8px 0;color:#6b4d1c;font-size:14px}@media(max-width:760px){.layout{display:block;padding:14px 12px}nav{position:static;display:flex;overflow:auto;gap:5px;white-space:nowrap;margin-bottom:14px;padding:8px}nav b{display:none}nav a{display:inline-block}.section{padding:20px 17px;border-radius:14px}.top{padding:30px 20px}h2{font-size:19px}}@media print{nav,.summary,.table-tools,.sort span{display:none}.layout{display:block}.section{box-shadow:none;break-inside:auto}.scroll{overflow:visible}table{min-width:0;font-size:10px}.top{background:white;color:#111}.top p,.top .kicker{color:#333}}</style><style id="site-readingbar-style">.site-readingbar{position:static;top:auto;align-self:auto;border-radius:0;background:transparent;max-width:1180px;margin:0 auto;padding:16px 24px;display:flex;justify-content:space-between;gap:16px;align-items:center;border-bottom:1px solid #dce4ef;color:#315cd8;font-size:14px}.site-readingbar a{color:#315cd8;text-decoration:none;display:inline-flex;align-items:center;min-height:44px}.site-readingbar>a{font-weight:600}.site-readingbar>div{display:flex;gap:20px;flex-wrap:wrap}.site-readingbar a:hover{text-decoration:underline}.site-readingbar a:focus-visible{outline:2px solid #315cd8;outline-offset:4px}@media(max-width:600px){.site-readingbar{padding:10px 18px;align-items:flex-start;flex-direction:column;gap:0;font-size:13px}.site-readingbar>div{gap:18px}}</style><link rel="icon" href="./mark.svg" type="image/svg+xml"></head><body id="top"><nav class="site-readingbar" aria-label="复盘阅读导航"><a href="./">龙空龙模式 / 研究手记</a><div><a href="./#reviews">← 返回每日复盘</a><a href="./review-20261028.html">10月28日复盘</a></div></nav><header class="top"><div class="kicker">POST-MARKET REVIEW · 2026.10.19</div><h1>修复之后的分歧，跌停扩散</h1><p>行情截止 10月19日 15:00 · 次日观察 10月20日 · 研究记录，非实际成交</p><div class="summary"><a href="#brief">先看简报 ↓</a><a href="#plan">次日计划 ↓</a><a href="#review">昨日名单回顾 ↓</a><button type="button" id="download">下载本页文字稿</button><button type="button" id="print">打印 / 保存PDF</button></div></header><div class="layout"><nav aria-label="复盘目录"><b>阅读目录</b><a href="#brief">首页简报</a><a href="#market">大盘与情绪</a><a href="#themes">板块与主线</a><a href="#plan">次日计划</a><a href="#review">昨日名单回顾</a><a href="#evidence">证据与缺口</a></nav><main><section id="brief" class="section"><div class="sectionhead"><span class="index">01</span><h2>首页简报</h2><a class="up" href="#top" aria-label="回到顶部">↑</a></div>
+<p><strong>一句话：市场走的是“急跌修复后的分歧”，而站点五档规则把今天落在“退潮偏冷”档（0%—10%）——两者必须分开写，不能混成一个标签。</strong>
+今日正常沪深样本 5,020 只，上涨 2,154、下跌 2,726、平盘 140；上涨比例 42.91%，
+个股涨跌幅中位数 −0.29%；收盘涨停 47 只、跌停 24 只；正常样本成交额 14,292.17 亿元。</p>
+
+<p><strong>判断依据（五项并列，不靠单一数字）：</strong></p>
+<ul>
+<li><strong>广度与中位同步回落：</strong>上涨比例由 10/16 的 58.91% 降至 42.91%，中位数由 +0.46% 转 −0.29%，成交额由 15,462.74 亿元降至 14,292.17 亿元（−7.57%）。</li>
+<li><strong>跌停明显扩散：</strong>跌停由 10 只增至 24 只，其中大众出版 3 只、教育出版 2 只，旧出版/消费高标是主要来源。</li>
+<li><strong>昨日涨停股反馈不差：</strong>10/16 的 61 只涨停股今日 33 涨 27 跌 1 平，中位数 +0.45%，11 只继续涨停、4 只跌停。这一项是今天唯一明确偏正的分项。</li>
+<li><strong>封板质量中等：</strong>收盘涨停 47 只、最高价触及涨停但未封住 23 只，收盘封住比例 67.14%。</li>
+<li><strong>高度不高：</strong>最高只有 3 板（2 只），2 板 9 只、首板 36 只；没有能带动全市场的新龙头。</li>
+</ul>
+
+<div class="warn"><strong>规则档位与描述性判断必须分开写：</strong>按站点首页已发布的五档映射（顺序判断，满足较前一项时停止），
+“跌停≥20只”这一条即把今日归入<strong>退潮偏冷</strong>，研究性仓位参考 <strong>0%—10%</strong>。
+但广度 42.91%、涨停 47 只、昨日涨停反馈中位 +0.45% 三项并不支持“全面退潮”。
+因此本页的处理是：<strong>档位按规则取 0%—10%（保守），市场描述写“修复后的分歧”，不把两者混成一个标签</strong>，
+也不因为描述偏中性就上调档位。</div>
+
+<p><strong>研究性仓位参考：0%—10%（权益占比，未绑定任何账户资金）。</strong>这是站点五档表的机械取值，触发条款为“跌停≥20只”；
+它不是目标仓位、不是应买入金额，也不代表已经出现买点。本次没有新增证据完整的条件单，<strong>可执行计划为 0 只</strong>。</p>
+
+<p><strong>次日（10/20）值得研究的对象与关注条件：</strong></p>
+<ul>
+<li><strong>人形机器人：</strong>宇树科技（当日带动核心）、绿的谐波（强次核心）、三花智控（容量）。关注 115 只同口径成员广度是否维持、核心是否仍有承接；若只有宇树独强，按短修复处理，不升级为主线。</li>
+<li><strong>地面兵装：</strong>北方导航、长城军工、内蒙一机。关注领涨与容量是否共同维持；甘化科工虽二板，成交额仅排该组第 7/12，不据板数封龙头。</li>
+<li><strong>汽车相关：</strong>万丰奥威（阶段核心，二板）、均胜电子（容量）。关注同业与普通成员参与是否重新扩大；万丰单独强不构成买点。</li>
+<li><strong>光通信线缆：</strong>亨通光电（首板，成交 98.31 亿元，有 10/17 业绩预告支撑）、中天科技、长飞光纤。关注业绩公告后同业是否继续响应；首板修复不等于首次分歧买点。</li>
+<li><strong>高度股：</strong>东方嘉盛、吉大正元（均为 3 板）。两只所在三级行业分别只有 2/8 与局部成员响应，不因“市场最高板”自动确认龙头。</li>
+<li><strong>旧高标：</strong>新华传媒（断板但仍收 +2.77%、成交 39.96 亿元）、慈文传媒（跌停价 8.40 拉到涨停的反包）。区分“有承接的修复”和“仍未恢复”，旧分歧不重置。</li>
+</ul>
+<p class="note">以上全部是研究观察对象，<strong>不是买入建议</strong>；每一条的观察条件、失效条件与主要风险在第四节逐条列出。</p>
+</section><section id="market" class="section"><div class="sectionhead"><span class="index">02</span><h2>大盘与情绪</h2><a class="up" href="#top" aria-label="回到顶部">↑</a></div>
+<p>先看市场整体，再看少数最强股票。样本口径与站点历史页一致：沪深（.SH/.SZ）、交易状态为正常交易、非风险警示板、
+现价与前收及成交额均大于 0 的股票；涨跌停不含名称以 N/C 开头的新股。</p>
+
+<h3>指数</h3>
+<div class="table-block" data-table-block id="mkt-idx"><div class="scroll"><table><thead><tr><th scope="col"><button type="button" class="sort">指数 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">收盘 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">涨跌 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">来源 <span aria-hidden="true">↕</span></button></th></tr></thead><tbody><tr><td>上证指数</td><td>3,730.92</td><td>+0.39%</td><td>当日报告引用的 Wind 收盘快照</td></tr><tr><td>深证成指</td><td>11,817.42</td><td>+0.13%</td><td>通达信当日日线</td></tr><tr><td>创业板指</td><td>2,746.29</td><td>−0.94%</td><td>通达信当日日线</td></tr><tr><td>沪深300</td><td>4,174.53</td><td>+0.09%</td><td>通达信当日日线</td></tr><tr><td>中证500</td><td>6,800.66</td><td>+0.41%</td><td>通达信当日日线</td></tr><tr><td>科创50</td><td>1,329.19</td><td>−2.17%</td><td>通达信当日日线</td></tr></tbody></table></div></div>
+<p class="note">上证指数取自当日报告引用的 Wind 收盘快照（本地通达信上证日线缓存止于 2026-08-14，不能用于本日）；其余指数为通达信当日日线，已与当日报告逐项核对一致。</p>
+
+<h3>全市场广度</h3>
+<div class="table-block" data-table-block id="mkt-breadth"><div class="scroll"><table><thead><tr><th scope="col"><button type="button" class="sort">指标 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">10月19日 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">10月16日（前一交易日） <span aria-hidden="true">↕</span></button></th></tr></thead><tbody><tr><td>正常沪深样本</td><td>5,020</td><td>5,021</td></tr><tr><td>上涨／下跌／平盘</td><td>2,154／2,726／140</td><td>2,958／1,954／109</td></tr><tr><td>上涨比例</td><td>42.91%</td><td>58.91%</td></tr><tr><td>个股涨跌幅中位数</td><td>−0.29%</td><td>+0.46%</td></tr><tr><td>收盘涨停／跌停</td><td>47／24</td><td>61／10</td></tr><tr><td>正常样本成交额</td><td>14,292.17 亿元</td><td>15,462.74 亿元</td></tr></tbody></table></div></div>
+<p>成交额按两日各自正常样本汇总，<strong>不是同一样本的成交额变化</strong>，因此 −7.57% 只能描述“当日正常样本总额比前一日低”，
+不构成资金净流出的证据。成交额与净流入是两个不同概念，本页不使用“资金流入/流出”表述。</p>
+
+<h3>涨停、跌停与封板质量</h3>
+<ul>
+<li>收盘涨停 <strong>47</strong> 只、跌停 <strong>24</strong> 只。</li>
+<li>最高价触及涨停价但收盘未封住 <strong>23</strong> 只；收盘封住比例 <strong>67.14%</strong>
+（47 ÷（47＋23））。</li>
+<li>该比例按“最高价是否等于涨停价”识别，<strong>不含逐笔封板顺序</strong>；与东方财富炸板池口径不同，不强行合并。</li>
+<li>Wind 导出不含最高价字段，触板判定用通达信当日日线补齐；18 只样本缺少通达信日线文件，未纳入触板统计（占正常样本 0.36%）。</li>
+</ul>
+
+<h3>连板高度与晋级</h3>
+<p>今日梯队：<strong>3 板 2 只、2 板 9 只、首板 36 只，合计 47 只。</strong>
+昨日（10/16）梯队为 4 板 1、3 板 1、2 板 4、首板 55，合计 61 只。</p>
+<div class="table-block" data-table-block id="mkt-ladder"><div class="scroll"><table><thead><tr><th scope="col"><button type="button" class="sort">昨日板数 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">昨日只数 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">今日续板 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">未续板 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">说明 <span aria-hidden="true">↕</span></button></th></tr></thead><tbody><tr><td>4 板</td><td>1</td><td>0</td><td>0</td><td>冰山冷热断板，收 +2.36%，最高 8.37 未及涨停价 8.38</td></tr><tr><td>3 板</td><td>1</td><td>0</td><td>1</td><td>新华文轩跌停 −9.99%</td></tr><tr><td>2 板</td><td>4</td><td>2</td><td>2</td><td>东方嘉盛、吉大正元晋级 3 板</td></tr><tr><td>首板</td><td>55</td><td>9</td><td>46</td><td>9 只晋级 2 板，晋级率 16.36%</td></tr></tbody></table></div></div>
+<p>整体晋级情况：昨日 61 只涨停股中，今日仍有 11 只涨停（含 2 只 3 板、9 只 2 板），
+<strong>连板整体续板率约 18.03%</strong>（11/61）；首板晋级 2 板 9/55＝16.36%，2 板晋级 3 板 2/4＝50%。
+分母很小，2 板晋级率 50% 不足以说明接力环境改善。</p>
+
+<h3>高位股反馈</h3>
+<div class="table-block" data-table-block id="mkt-high"><div class="scroll"><table><thead><tr><th scope="col"><button type="button" class="sort">股票 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">昨日板数 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">今日收盘 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">今日涨跌 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">说明 <span aria-hidden="true">↕</span></button></th></tr></thead><tbody><tr><td>冰山冷热</td><td>4 板</td><td>7.80</td><td>+2.36%</td><td>断板；盘中最高 8.37，距涨停价 8.38 差 0.01 元，<strong>不计为触板或炸板</strong></td></tr><tr><td>新华文轩</td><td>3 板</td><td>25.33</td><td>−9.99%</td><td>跌停；教育出版方向负反馈</td></tr></tbody></table></div></div>
+<p><strong>这一项是本日最重要的反证来源：</strong>4 板股断板但未崩、3 板股直接跌停，说明高位股的负反馈是<em>分方向</em>的，
+不是整体性的。冰山冷热“差一分钱”不能记成触板或炸板——最高价 8.37 与涨停价 8.38 不等，按口径不构成触板。</p>
+
+<h3>情绪周期判断</h3>
+<p><strong>描述性判断：急跌修复后的分歧。</strong>10/14、10/15 连续大幅走弱（上涨比例 17.55%、7.75%），10/16 明显修复（58.91%），
+今日回落到 42.91%，同时跌停从 10 只增至 24 只。这条序列更像“修复—分歧”，
+不支持把 10/16 与 10/19 直接解释为新一轮全面上涨。</p>
+<p><strong>规则档位：退潮偏冷，0%—10%。</strong>触发条款为“跌停≥20只”。这是五档表中的第一档，属机械取值；
+本页不因描述性判断偏中性而上调，也不把“跌停扩散”夸大成全面退潮——广度仍在 42.91%、涨停仍有 47 只。</p>
+</section><section id="themes" class="section"><div class="sectionhead"><span class="index">03</span><h2>板块与主线</h2><a class="up" href="#top" aria-label="回到顶部">↑</a></div>
+<p><strong>结论：今日不是一条主线，而是“容量方向普涨＋题材方向扩散＋旧高标退潮”的多线轮动。</strong>
+银行、军工、通信线缆、机器人相关、汽车前排各自有独立证据，但没有一条同时满足“广度＋核心身份＋梯队完整”。
+按站点规则，<strong>当日强势方向一律先记为观察</strong>，须跨日持续、核心身份可核、梯队完整三项齐备才升级为主线。</p>
+
+<h3>申万三级行业（同一口径，样本≥8 只）</h3>
+<div class="table-block" data-table-block id="theme-sw3"><div class="table-tools"><label>查找 <input class="table-search" type="search" placeholder="名称、代码或关键词" aria-label="筛选本表"></label><span class="table-count"></span><button type="button" class="clear-filter">清除</button><small>仅筛选本表，统计范围不变</small></div><div class="scroll"><table><thead><tr><th scope="col"><button type="button" class="sort">申万三级行业 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">样本 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">涨／跌／平 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">上涨比例 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">中位涨幅 <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">成交额（亿元） <span aria-hidden="true">↕</span></button></th><th scope="col"><button type="button" class="sort">涨停 <span aria-hidden="true">↕</span></button></th></tr></thead><tbody><tr><td>城商行Ⅲ</td><td>17</td><td>17／0／0</td><td>100.00%</td><td>+1.71%</td><td>76.69</td><td>0</td></tr><tr><td>农商行Ⅲ</td><td>10</td><td>10／0／0</td><td>100.00%</td><td>+1.27%</td><td>22.90</td><td>0</td></tr><tr><td>股份制银行Ⅲ</td><td>9</td><td>9／0／0</td><td>100.00%</td><td>+0.95%</td><td>92.46</td><td>0</td></tr><tr><td>航天装备Ⅲ</td><td>9</td><td>9／0／0</td><td>100.00%</td><td>+1.49%</td><td>29.18</td><td>0</td></tr><tr><td>通信线缆及配套</td><td>12</td><td>11／1／0</td><td>91.67%</td><td>+1.84%</td><td>258.59</td><td>1</td></tr><tr><td>地面兵装Ⅲ</td><td>12</td><td>11／1／0</td><td>91.67%</td><td>+4.02%</td><td>100.43</td><td>1</td></tr><tr><td>航海装备Ⅲ</td><td>10</td><td>9／1／0</td><td>90.00%</td><td>+2.63%</td><td>62.91</td><td>0</td></tr><tr><td>轮胎轮毂</td><td>21</td><td>17／4／0</td><td>80.95%</td><td>+1.03%</td><td>27.47</td><td>1</td></tr><tr><td>数字芯片设计</td><td>56</td><td>30／25／1</td><td>53.57%</td><td>+0.15%</td><td>865.55</td><td>1</td></tr><tr><td>印制电路板</td><td>46</td><td>19／27／0</td><td>41.30%</td><td>−0.73%</td><td>740.35</td><td>3</td></tr><tr><td>半导体设备</td><td>26</td><td>1／25／0</td><td>3.85%</td><td>−3.47%</td><td>333.49</td><td>0</td></tr><tr><td>大众出版</td><td>18</td><td>3／15／0</td><td>16.67%</td><td>−2.61%</td><td>127.86</td><td>0</td></tr><tr><td>教育出版</td><td>10</td><td>4／6／0</td><td>40.00%</td><td>−1.44%</td><td>29.68</td><td>0</td></tr><tr><td>水泥制造</td><td>13</td><td>5／8／0</td><td>38.46%</td><td>−0.32%</td><td>28.34</td><td>0</td></tr><tr><td>影视动漫制作</td><td>14</td><td>5／9／0</td><td>35.71%</td><td>−0.95%</td><td>93.08</td><td>1</td></tr><tr><td>中间产品及消费品供应链服务</td><td>8</td><td>2／6／0</td><td>25.00%</td><td>−1.28%</td><td>12.67</td><td>1</td></tr></tbody></table></div></div><p class="note">行业层级与 Wind 概念分别统计、并列解释，不合并成一个混合排名。表中行业按本页关注方向选取，不是全量排名。</p>
+
+<h3>各方向的角色与阶段</h3>
+
+<p><strong>1）人形机器人（跨行业题材，不能用申万行业冒充成分）：</strong>当日报告按 Wind 概念原始 119 只、
+去重并剔除 2 只北交所与 2 只 ST 后得 115 只：83 涨、31 跌、1 平，上涨比例 72.17%，中位数 +2.19%，成交 636.24 亿元。
+<strong>核心＝宇树科技</strong>（+16.15%，成交 30.89 亿元，该名单内涨幅第 1、成交额第 3）；
+<strong>次核心＝绿的谐波</strong>（+5.81%）；<strong>容量＝三花智控</strong>（+3.91%，成交 18.88 亿元）。
+兆威机电、浙江荣泰为名单内两只涨停。<strong>正式龙二未确认</strong>：绿的谐波只是“强次核心”，
+能否算龙二需要看它是否在次日继续带动，而不是今天涨得多。
+<em>阶段：扩散初期／修复升温，等待延续。</em>跟风与补涨身份暂未确认，不贴标签。</p>
+
+<p><strong>2）光通信线缆（申万三级，12 只）：</strong>11 涨 1 跌，中位数 +1.85%，成交 258.59 亿元（前一日 177.12 亿元，+46.00%）。
+<strong>核心兼容量＝亨通光电</strong>（涨停，成交 98.31 亿元）；中天科技 +5.41%、长飞光纤 +2.56% 有同业响应，属容量验证。
+<strong>正式龙二未确认</strong>。<em>阶段：业绩推动的强修复（首板）。</em>
+催化为亨通 10/17 公告预计前三季度归母净利 59.70—63.70 亿元、同比 +151.27%—168.10%（初步预计、未经审计），
+周末已披露，<strong>不属于今日盘中新发布</strong>。</p>
+
+<p><strong>3）地面兵装（申万三级，12 只）：</strong>11 涨，中位数 +4.02%，成交 100.43 亿元（前一日 69.24 亿元）。
+<strong>领涨核心＝北方导航</strong>（+8.33%，盘中触板未封）；<strong>容量＝长城军工</strong>（+5.01%）、内蒙一机（+4.39%）。
+甘化科工二板，但成交额仅排该组第 7/12，<strong>不因板数封为龙头</strong>；<strong>龙二未确认</strong>。
+<em>阶段：修复延续，细分强弱有变化。</em>航空装备 46 只中 32 涨、中位 +1.29%，不如 10/16 整齐；
+航发科技冲高回落、收盘低于当日均价，洪都航空 −0.08%，说明“军工上涨”不等于核心股都在加速。</p>
+
+<p><strong>4）汽车相关（申万汽车零部件 239 只）：</strong>147 涨、88 跌、4 平，中位数 +0.70%，成交 403.43 亿元；
+前一日为 206 涨、33 跌、中位 +2.12%。<strong>阶段核心＝万丰奥威</strong>（二板，在轮胎轮毂 21 只中涨幅与成交额均第 1，该组 17 涨 4 跌）；
+<strong>容量＝均胜电子</strong>（+1.48%，汽车零部件成交额第 1）。<strong>龙二未确认</strong>：
+东安动力、文灿股份、保隆科技同为二板，尚分不出统一龙二。江淮汽车 −1.34%、中鼎股份 −4.06% 说明首板不能照单接力。
+<em>阶段：前排延续、整体分化。</em></p>
+
+<p><strong>5）银行（容量方向，不是情绪方向）：</strong>城商行 17 只全部上涨、中位 +1.71%；农商行 10 只全部上涨；
+股份制银行 9 只全部上涨、中位 +0.95%。申万一级银行 42 只全部上涨、中位 +1.39%，成交 311.46 亿元，
+低于前一日 333.79 亿元。<strong>无已确认的情绪龙头／龙二</strong>，农行为当日较强容量股。
+<em>阶段：普涨的容量方向，不能按连板接力解读。</em>价格上涨但成交额下降，只能确认“普涨”，不能据此说大量新增资金入场。</p>
+
+<p><strong>6）出版与传媒（旧高标退潮）：</strong>大众出版 18 只仅 3 只上涨、中位 −2.61%，3 只跌停；教育出版 10 只 4 涨 6 跌、中位 −1.44%，2 只跌停。
+新华传媒 +2.77%、成交 39.96 亿元（前一日 2.47 亿元），正式结束此前经核验的涨停序列，属“大换手断板但仍有承接”；
+慈文传媒从跌停价 8.40 拉到 10.26 涨停（14:52 首次触板），是旧强股的强反包。
+<strong>没有新确认的统一龙头／龙二</strong>，文轩、读者、出版传媒继续掉队。
+<em>阶段：退潮，个别核心修复。</em>不能用慈文一个反包证明传媒整体恢复。</p>
+
+<p><strong>7）水泥制造（13 只）：</strong>5 涨 8 跌，中位 −0.32%，成交 28.34 亿元（前一日 38.28 亿元）。
+前一日 13 只全部上涨的扩散没有延续：福建水泥 +2.51% 相对强，海螺水泥 −1.07%，尖峰集团 −8.30%。
+<strong>尖峰的延续假设失效</strong>，福建尚未证明能接任新龙头。<em>阶段：修复未延续。</em></p>
+
+<h3>消息刺激：来源、时间、强度与受益关系</h3>
+<ul>
+<li><strong>商务部“科技兴商”意见（新，可核）：</strong>商务部官网页面标注 2026-10-19 10:12 公开，公文落款 10/13，
+包含机器人等智能商品及具身智能技术应用方向。落款时间不能当作市场已知时间。
+<strong>强度判断：方向性支持，不是订单</strong>——文件支持应用前景，不等于具体公司当日拿到订单。
+宇树当日 10:00 已到 454 元（较前收 +6.33%），10:12 为 454.91，收盘 495.92，
+说明上午已先走强、下午再有增强，<strong>不能把全部涨幅归因于 10:12 的政策</strong>。</li>
+<li><strong>人形机器人国家标准（旧闻，不重复计入）：</strong>官方平台显示发布日期 2026-09-28、实施日 2027-04-01，
+属旧信息，不能当作今日新刺激。</li>
+<li><strong>亨通光电业绩预告（新，但已在周末披露）：</strong>10/17 公告，预计前三季度归母净利同比 +151.27%—168.10%。
+这是公司层面的具体业绩支撑，强于泛泛的政策预期；<strong>但周末已公开，不算今日盘中新增</strong>。</li>
+<li><strong>宏观背景：</strong>国家统计局 10/19 10:00 发布前三季度 GDP 同比 +4.6%、三季度 +4.5%。
+本轮未核实一致预期，因此不称“超预期/低于预期”，也不从 GDP 数字直接推导个股应上涨。</li>
+<li><strong>未核实的部分：</strong>本轮没有取得可与“军工细分走强”“汽车前排延续”一一对应的首发公告证据，
+这两条只作为市场关注方向记录，<strong>不称为已验证催化</strong>。</li>
+</ul>
+</section><section id="plan" class="section"><div class="sectionhead"><span class="index">04</span><h2>次日计划</h2><a class="up" href="#top" aria-label="回到顶部">↑</a></div>
+<p><strong>前置结论：10月19日收盘时，本项目<strong>没有新增证据完整的条件单</strong>；原 10/19 尖峰计划已按原取消条款记为取消，不按今天更低的价格重写旧计划。</strong>
+下表是当日报告发布的分组研究清单，本页<strong>保留原始条件，不补写新的阈值或窗口</strong>；
+观察名单不等于买入建议，也不推定用户持仓或实盘成交。</p>
+
+<div class="objcard"><div class="objhead"><span class="tagline">优先级 1</span><b>人形机器人：宇树科技、绿的谐波、三花智控（及 115 只同口径成员）</b></div><table class="kv"><tbody><tr><th>入选理由</th><td>当日广度 72.17%、中位 +2.19%、成交 636.24 亿元，是当日最强扩散；宇树为带动核心，绿的谐波、三花有验证作用。</td></tr><tr><th>观察条件</th><td>核心保持承接；同口径成员广度维持；容量股能跟；催化与公司业务之间能找到可核对的传导。</td></tr><tr><th>触发条件</th><td><strong>未形成。</strong>当日未给出触发价、确认窗口与执行报价核验要求，属研究观察，不是条件单。</td></tr><tr><th>失效条件</th><td>宇树独涨、成员明显掉队，或高开后核心承接转弱 → 仍按短修复看，不升级为主线。</td></tr><tr><th>主要风险</th><td>概念名单含主营较宽的公司，概念标签不等于机器人业务已贡献利润；两日修复只是收复 9/21 以来的回撤。</td></tr></tbody></table></div><div class="objcard"><div class="objhead"><span class="tagline">优先级 2</span><b>地面兵装：北方导航、长城军工、内蒙一机（另看甘化科工的高度与成交是否匹配）</b></div><table class="kv"><tbody><tr><th>入选理由</th><td>12 只中 11 涨、中位 +4.02%、成交放大到 100.43 亿元，两日修复有延续。</td></tr><tr><th>观察条件</th><td>领涨与容量股共同保持，细分参与度不明显收缩。</td></tr><tr><th>触发条件</th><td><strong>未形成。</strong>甘化科工二板但成交额仅排该组第 7/12，不能据板数封为龙头。</td></tr><tr><th>失效条件</th><td>只有单个高弹性股维持强势，或航空等分支继续走弱 → 军工整体不升级。</td></tr><tr><th>主要风险</th><td>未核实到足以解释整个分支的新订单等直接盈利事件；地缘与产业预期只作线索。</td></tr></tbody></table></div><div class="objcard"><div class="objhead"><span class="tagline">优先级 3</span><b>汽车相关：万丰奥威、均胜电子及同题材成员</b></div><table class="kv"><tbody><tr><th>入选理由</th><td>万丰二板、轮胎轮毂组内涨幅与成交额双第 1；均胜为汽车零部件成交额第 1，有容量配合。</td></tr><tr><th>观察条件</th><td>万丰阶段强势有同业和容量配合，普通成员参与重新扩大。</td></tr><tr><th>触发条件</th><td><strong>未形成。</strong>当日明确“不把二板当作可追买点”，没有给出回踩价位与确认结构。</td></tr><tr><th>失效条件</th><td>万丰单独强、汽车广度继续收窄 → 降级为单股行情。</td></tr><tr><th>主要风险</th><td>汽车零部件中位由 +2.12% 降至 +0.70%，广度收窄；江淮汽车、中鼎股份已给出掉队样本。</td></tr></tbody></table></div><div class="objcard"><div class="objhead"><span class="tagline">观察</span><b>光通信线缆：亨通光电、中天科技、长飞光纤</b></div><table class="kv"><tbody><tr><th>入选理由</th><td>业绩预告 + 首板涨停 + 同业响应，是本日最“有具体业绩”的方向。</td></tr><tr><th>观察条件</th><td>业绩公告后第二天同业继续响应，核心承接未破坏。</td></tr><tr><th>触发条件</th><td><strong>未形成。</strong>首板修复不等于首次分歧买点，原报告未给出条件。</td></tr><tr><th>失效条件</th><td>只有亨通单只强，或行业广度、容量同步转弱 → 降为单股催化。</td></tr><tr><th>主要风险</th><td>业绩预告为初步预计、未经审计；周末已披露，不属当日盘中新增。</td></tr></tbody></table></div><div class="objcard"><div class="objhead"><span class="tagline">观察</span><b>反包与高位断板：慈文传媒、新华传媒</b></div><table class="kv"><tbody><tr><th>入选理由</th><td>慈文从跌停价拉到涨停，新华传媒大换手断板但仍收 +2.77%，旧高标仍有承接。</td></tr><tr><th>观察条件</th><td>反包出现更多独立样本，且同题材有响应；旧强股负反馈停止扩散。</td></tr><tr><th>触发条件</th><td><strong>未形成。</strong>反包本身不是策略信号，需要独立样本与同题材响应共同成立。</td></tr><tr><th>失效条件</th><td>只有慈文一个强案例、其他旧核心继续跌停 → 不把反包当普遍策略。</td></tr><tr><th>主要风险</th><td>旧分歧不重置；出版方向当日 3 只跌停，退潮未结束。</td></tr></tbody></table></div><div class="objcard"><div class="objhead"><span class="tagline">观察</span><b>高度股：东方嘉盛、吉大正元（均 3 板）</b></div><table class="kv"><tbody><tr><th>入选理由</th><td>当日市场最高板，是接力环境最直接的观察点。</td></tr><tr><th>观察条件</th><td>两只能否带动各自窄题材；东方所在三级行业仅 2/8 涨、中位 −1.28%，吉大今日一字且成交额排名靠后，均需次日修复。</td></tr><tr><th>触发条件</th><td><strong>未形成。</strong>不因“市场最高板”自动确认龙头身份。</td></tr><tr><th>失效条件</th><td>窄题材无响应、成交额继续偏小 → 维持观察，不升级。</td></tr><tr><th>主要风险</th><td>一字板无法验证承接；同组参与度低，高度与容量分离。</td></tr></tbody></table></div>
+<p class="note">“优先级”是当日报告的研究排序，不是仓位分配；同一对象不得因为出现在本页就视为已获买入资格。<strong>六只对象全部没有触发条件</strong>，这是当日的事实，不是遗漏。</p>
+
+<h3>三种盘面情景下的应对</h3>
+<ul>
+<li><strong>参与继续改善：</strong>上涨面、中位数与昨日涨停股反馈一起改善后，再看上述方向哪条线由核心、容量到跟风共同扩散。
+只有一条持续胜出才列为当日主线；两三条交替而无一条占优，继续叫轮动。</li>
+<li><strong>指数稳但个股分化：</strong>银行等容量方向托住指数、短线无一致性时，结论仍是结构性行情；
+重点看核心股承接，<strong>不把指数稳定误读成普遍机会</strong>。</li>
+<li><strong>高位负反馈扩大、低位新线也走弱：</strong>若跌停与断板负反馈扩散、新方向没有承接，向防守/无清晰主线调整；
+纯龙头路径没有合格结构就保持空仓研究，不为“每天要有计划”硬找标的。</li>
+</ul>
+<p class="note">明日研究重点不是预先押某个板块，而是观察哪条线先通过“市场参与—题材扩散—核心身份—分歧承接”这条证据链。</p>
+</section><section id="review" class="section"><div class="sectionhead"><span class="index">05</span><h2>昨日名单回顾</h2><a class="up" href="#top" aria-label="回到顶部">↑</a></div>
+<p><strong>本节只复核本项目在 <strong>10月16日</strong> 实际发布的名单与原条件。</strong>当日名单由两部分构成：
+<strong>1 只完整条件候选（尖峰集团）</strong>与 <strong>14 只观察对象</strong>。观察对象在原报告中只有“看什么”，
+没有触发价、没有失效条件，因此本节<strong>不追认任何触发或成交</strong>，也不替原报告补写阈值。</p>
+
+<div class="objcard"><div class="objhead"><span class="tagline">完整条件候选（唯一）</span><b>尖峰集团 600668</b></div><table class="kv"><tbody><tr><th>原条件</th><td>回踩 8.63—8.79 后，出现两根完成分钟收回 8.79 及实时累计均价上方；<strong>任意实际价格先破 8.34 即取消</strong>。</td></tr><tr><th>今日实际</th><td>开 8.48（已低于 8.63），最高 8.65（未到 8.79），最低 7.99（已破 8.34），收 8.06（−8.30%）。</td></tr><tr><th>判定</th><td><strong>取消。</strong>取消线 8.34 先被击穿，确认路径从结构上不可能完整发生。</td></tr><tr><th>成交状态</th><td>成交未确认（研究阶段未下单）。</td></tr></tbody></table></div><div class="objcard"><div class="objhead"><span class="tagline">观察（无触发条件）</span><b>新华传媒 600825</b></div><table class="kv"><tbody><tr><th>原身份</th><td>原报告列为观察对象，未给出触发价与失效条件。</td></tr><tr><th>今日实际</th><td>15.58（+2.77%），成交 39.96 亿元，正式断板，仍有承接。</td></tr><tr><th>判定</th><td>不适用（无触发条件）；不追认触发。</td></tr><tr><th>成交状态</th><td>成交未确认。</td></tr></tbody></table></div><div class="objcard"><div class="objhead"><span class="tagline">观察（无触发条件）</span><b>新华文轩 601811</b></div><table class="kv"><tbody><tr><th>原身份</th><td>观察对象，无触发条件。</td></tr><tr><th>今日实际</th><td>25.33（−9.99%）跌停。</td></tr><tr><th>判定</th><td>不适用；记录为负反馈，不追认为交易结果。</td></tr><tr><th>成交状态</th><td>成交未确认。</td></tr></tbody></table></div><div class="objcard"><div class="objhead"><span class="tagline">观察（无触发条件）</span><b>百洋股份 002696</b></div><table class="kv"><tbody><tr><th>原身份</th><td>观察对象，无触发条件。</td></tr><tr><th>今日实际</th><td>8.69（−10.04%）跌停。</td></tr><tr><th>判定</th><td>不适用；负反馈。</td></tr><tr><th>成交状态</th><td>成交未确认。</td></tr></tbody></table></div><div class="objcard"><div class="objhead"><span class="tagline">观察（无触发条件）</span><b>慈文传媒 002343</b></div><table class="kv"><tbody><tr><th>原身份</th><td>观察对象，无触发条件。</td></tr><tr><th>今日实际</th><td>10.26（+9.97%）涨停，盘中最低 8.40 即当日跌停价，尾盘反包。</td></tr><tr><th>判定</th><td>不适用；反包是方向验证，不是买点确认。</td></tr><tr><th>成交状态</th><td>成交未确认。</td></tr></tbody></table></div><div class="objcard"><div class="objhead"><span class="tagline">观察（无触发条件）</span><b>冰山冷热 000530</b></div><table class="kv"><tbody><tr><th>原身份</th><td>观察对象，无触发条件。</td></tr><tr><th>今日实际</th><td>7.80（+2.36%）断板，最高 8.37，未及涨停价 8.38。</td></tr><tr><th>判定</th><td>不适用；<strong>不计为触板或炸板</strong>。</td></tr><tr><th>成交状态</th><td>成交未确认。</td></tr></tbody></table></div><div class="objcard"><div class="objhead"><span class="tagline">观察（无触发条件）</span><b>万丰奥威 002085</b></div><table class="kv"><tbody><tr><th>原身份</th><td>观察对象，无触发条件。</td></tr><tr><th>今日实际</th><td>10.90（+9.99%）二板。</td></tr><tr><th>判定</th><td>不适用；涨停只记观察对象后续路径，不算本项目买到。</td></tr><tr><th>成交状态</th><td>成交未确认。</td></tr></tbody></table></div>
+
+<h3>逐条说明</h3>
+<p><strong>尖峰集团：原计划应取消，不能延续到明天“再等等”。</strong>原条件要求先回踩 8.63—8.79，
+再出现两根完成分钟回到 8.79 及均价上方；任意实际价格先破 8.34 即取消。今日开盘 8.48 已在回踩区间下方，
+全天最高 8.65 未到 8.79，最低 7.99 明确击穿 8.34，收 8.06。
+<strong>取消条款先被触发，确认路径从结构上不可能完整发生。</strong>
+本页用日线核对到“最低 7.99 < 8.34”这一事实；至于“第一根完成分钟内即破 8.34”，
+依据的是当日报告的分钟级记录，<strong>本页未重跑分钟数据，取消时点以原报告为准</strong>。</p>
+
+<p><strong>需要同时承认两件事：</strong>原条件把不合格路径拦住了，这是执行纪律的有效性；
+但昨晚把尖峰列为唯一条件候选的<em>方向判断</em>没有得到市场验证。<strong>不能用“没有触发”掩盖候选判断没有成功</strong>，
+也不能凭这一个样本宣称策略已经有效。</p>
+
+<p><strong>14 只观察对象：</strong>原报告未给出逐只触发与失效条件，本节只能登记“观察”，
+不把当日涨跌追认为交易结果。上表列出的是当日报告已逐只核对、且本页用 Wind/通达信数据复核过价格的对象；
+<strong>其余观察对象未在可核文件中逐只复原，列入第六节的数据缺口</strong>，不猜补名单。</p>
+
+<h3>状态分层（严格区分）</h3>
+<ul>
+<li><strong>观察：</strong>14 只，全部停留在观察层，无触发登记。</li>
+<li><strong>价格触及：</strong>0 只。尖峰今日最高 8.65 未达确认价 8.79，不构成价格触及。</li>
+<li><strong>有效触发：</strong>0 只。</li>
+<li><strong>实际成交：</strong>成交未确认。本项目为研究阶段，用户明确不下单。</li>
+</ul>
+<p class="note">冰山冷热当日最高 8.37、涨停价 8.38，差 0.01 元，按口径<strong>不计为触板或炸板</strong>；
+若按“接近涨停”处理会污染封板率统计。</p>
+</section><section id="evidence" class="section"><div class="sectionhead"><span class="index">06</span><h2>证据与缺口</h2><a class="up" href="#top" aria-label="回到顶部">↑</a></div>
+<h3>使用的数据与来源</h3>
+<ul>
+<li><strong>主行情：</strong><code>全部A股1019.xlsx</code>（本地 Wind 导出，桌面“数据”文件夹）。逐行字段完整，
+申万一级/三级、交易状态、风险警示板、涨跌幅、前收、涨停价、跌停价均无缺失；涨跌幅与“现价/前收−1”无冲突。</li>
+<li><strong>前一交易日：</strong><code>全部A股1016.xlsx</code>，用于昨日涨停股反馈与连板回溯。</li>
+<li><strong>日线与指数：</strong><code>C:/new_tdx/vipdoc</code>（通达信），用于补齐 Wind 缺失的最高/最低价、触板判定与指数涨跌。</li>
+<li><strong>当日已发布报告：</strong><code>盘后复盘-20261019.md</code>（本项目当日形成的盘后报告），
+用于昨日计划原文、方向角色判断与催化来源；本页数字已用行情文件独立复核。</li>
+</ul>
+
+<h3>统计口径</h3>
+<ul>
+<li>正常沪深样本：代码以 .SH/.SZ 结尾 × 交易状态＝正常交易 × 风险警示板＝否 × 现价/前收/成交额/成交量均大于 0。</li>
+<li>涨停／跌停：现价与涨停价／跌停价之差小于 0.005 元，且名称不以 N/C 开头。</li>
+<li>封板比例＝收盘涨停 ÷（收盘涨停＋最高价触及涨停但未封住），不含逐笔封板顺序。</li>
+<li>昨日涨停股反馈：以前一交易日收盘涨停名单为固定样本，逐只取今日涨跌幅，<strong>不是同一组合的连续收益</strong>。</li>
+<li>行业层级与概念名单分别统计，不合并排名；行业指数不替代成分股广度。</li>
+</ul>
+
+<h3>数据缺口与影响</h3>
+<ul>
+<li><strong>上证指数：</strong>本地通达信上证日线缓存止于 2026-08-14，本页上证点位与涨跌取自当日报告引用的 Wind 收盘快照，
+未用过期文件冒充。<em>影响：上证分时结构无法复核，但广度与中位数不依赖该指数。</em></li>
+<li><strong>Wind 导出无最高价：</strong>触板与封板比例改由通达信日线补齐，其中 18 只缺少通达信文件
+（占正常样本 0.36%）。<em>影响：封板率可能被低估或高估 0—18 只的幅度，不足以改变 67% 这一档判断。</em></li>
+<li><strong>10月9日、10月12日无全市场导出：</strong>这两个交易日没有可核的 Wind 快照，站点未为它们建页。
+<em>影响：10/13 的连板回溯与晋级率分母存在缺口；本页 10/16→10/19 为直接相邻交易日，不受影响。</em></li>
+<li><strong>10月16日的 14 只观察名单未逐只复原：</strong>当日报告以网页快照形式留存，未提供结构化的代码-条件表，
+本页只复核了能在行情文件中确认的对象。<em>影响：无法统计 14 只的整体反馈，因此不给出“昨日名单整体表现”的结论。</em></li>
+<li><strong>未核实：</strong>军工细分走强、汽车前排延续的首发公告证据；金融街论坛讲话的盘中公开时点；
+融资余额为 T-1 背景（截止 10/16，余额 24,597.06 亿元、净额 −144.90 亿元），不是当日盘中统计。</li>
+</ul>
+
+<h3>方法边界</h3>
+<p>本页是<strong>按当日收盘数据与当日已发布报告整理的历史复盘页</strong>，不是当日盘中的实时判断，也不是对未来的预测。
+观察、价格触及、有效触发与实际成交分别记录；没有成交凭据即写“成交未确认”。
+仓位数字是站点五档表的机械取值，不绑定账户资金，不推定用户持仓。</p>
+</section><div class="foot">本页为按当日收盘数据与当日已发布报告整理的历史复盘页；观察、价格触及、有效触发与实际成交分别记录。<br>数据源：本地 Wind 全市场导出《全部A股1019.xlsx》、通达信日线与当日已发布报告；口径与站点历史页一致。</div></main></div><textarea id="md-source" hidden># 2026-10-19 盘后复盘｜修复之后的分歧，跌停扩散
+
+行情截止 10月19日 15:00 · 次日观察 10月20日 · 研究记录，非实际成交
+
+## 首页简报
+
+一句话：市场走的是“急跌修复后的分歧”，而站点五档规则把今天落在“退潮偏冷”档（0%—10%）——两者必须分开写，不能混成一个标签。
+今日正常沪深样本 5,020 只，上涨 2,154、下跌 2,726、平盘 140；上涨比例 42.91%，
+个股涨跌幅中位数 −0.29%；收盘涨停 47 只、跌停 24 只；正常样本成交额 14,292.17 亿元。
+判断依据（五项并列，不靠单一数字）：
+广度与中位同步回落：上涨比例由 10/16 的 58.91% 降至 42.91%，中位数由 +0.46% 转 −0.29%，成交额由 15,462.74 亿元降至 14,292.17 亿元（−7.57%）。
+跌停明显扩散：跌停由 10 只增至 24 只，其中大众出版 3 只、教育出版 2 只，旧出版/消费高标是主要来源。
+昨日涨停股反馈不差：10/16 的 61 只涨停股今日 33 涨 27 跌 1 平，中位数 +0.45%，11 只继续涨停、4 只跌停。这一项是今天唯一明确偏正的分项。
+封板质量中等：收盘涨停 47 只、最高价触及涨停但未封住 23 只，收盘封住比例 67.14%。
+高度不高：最高只有 3 板（2 只），2 板 9 只、首板 36 只；没有能带动全市场的新龙头。
+规则档位与描述性判断必须分开写：按站点首页已发布的五档映射（顺序判断，满足较前一项时停止），
+“跌停≥20只”这一条即把今日归入退潮偏冷，研究性仓位参考 0%—10%。
+但广度 42.91%、涨停 47 只、昨日涨停反馈中位 +0.45% 三项并不支持“全面退潮”。
+因此本页的处理是：档位按规则取 0%—10%（保守），市场描述写“修复后的分歧”，不把两者混成一个标签，
+也不因为描述偏中性就上调档位。
+研究性仓位参考：0%—10%（权益占比，未绑定任何账户资金）。这是站点五档表的机械取值，触发条款为“跌停≥20只”；
+它不是目标仓位、不是应买入金额，也不代表已经出现买点。本次没有新增证据完整的条件单，可执行计划为 0 只。
+次日（10/20）值得研究的对象与关注条件：
+人形机器人：宇树科技（当日带动核心）、绿的谐波（强次核心）、三花智控（容量）。关注 115 只同口径成员广度是否维持、核心是否仍有承接；若只有宇树独强，按短修复处理，不升级为主线。
+地面兵装：北方导航、长城军工、内蒙一机。关注领涨与容量是否共同维持；甘化科工虽二板，成交额仅排该组第 7/12，不据板数封龙头。
+汽车相关：万丰奥威（阶段核心，二板）、均胜电子（容量）。关注同业与普通成员参与是否重新扩大；万丰单独强不构成买点。
+光通信线缆：亨通光电（首板，成交 98.31 亿元，有 10/17 业绩预告支撑）、中天科技、长飞光纤。关注业绩公告后同业是否继续响应；首板修复不等于首次分歧买点。
+高度股：东方嘉盛、吉大正元（均为 3 板）。两只所在三级行业分别只有 2/8 与局部成员响应，不因“市场最高板”自动确认龙头。
+旧高标：新华传媒（断板但仍收 +2.77%、成交 39.96 亿元）、慈文传媒（跌停价 8.40 拉到涨停的反包）。区分“有承接的修复”和“仍未恢复”，旧分歧不重置。
+以上全部是研究观察对象，不是买入建议；每一条的观察条件、失效条件与主要风险在第四节逐条列出。
+
+## 大盘与情绪
+
+先看市场整体，再看少数最强股票。样本口径与站点历史页一致：沪深（.SH/.SZ）、交易状态为正常交易、非风险警示板、
+现价与前收及成交额均大于 0 的股票；涨跌停不含名称以 N/C 开头的新股。
+指数
+指数 ↕ | 收盘 ↕ | 涨跌 ↕ | 来源 ↕ |
+上证指数 | 3,730.92 | +0.39% | 当日报告引用的 Wind 收盘快照 |
+深证成指 | 11,817.42 | +0.13% | 通达信当日日线 |
+创业板指 | 2,746.29 | −0.94% | 通达信当日日线 |
+沪深300 | 4,174.53 | +0.09% | 通达信当日日线 |
+中证500 | 6,800.66 | +0.41% | 通达信当日日线 |
+科创50 | 1,329.19 | −2.17% | 通达信当日日线 |
+上证指数取自当日报告引用的 Wind 收盘快照（本地通达信上证日线缓存止于 2026-08-14，不能用于本日）；其余指数为通达信当日日线，已与当日报告逐项核对一致。
+全市场广度
+指标 ↕ | 10月19日 ↕ | 10月16日（前一交易日） ↕ |
+正常沪深样本 | 5,020 | 5,021 |
+上涨／下跌／平盘 | 2,154／2,726／140 | 2,958／1,954／109 |
+上涨比例 | 42.91% | 58.91% |
+个股涨跌幅中位数 | −0.29% | +0.46% |
+收盘涨停／跌停 | 47／24 | 61／10 |
+正常样本成交额 | 14,292.17 亿元 | 15,462.74 亿元 |
+成交额按两日各自正常样本汇总，不是同一样本的成交额变化，因此 −7.57% 只能描述“当日正常样本总额比前一日低”，
+不构成资金净流出的证据。成交额与净流入是两个不同概念，本页不使用“资金流入/流出”表述。
+涨停、跌停与封板质量
+收盘涨停 47 只、跌停 24 只。
+最高价触及涨停价但收盘未封住 23 只；收盘封住比例 67.14%
+（47 ÷（47＋23））。
+该比例按“最高价是否等于涨停价”识别，不含逐笔封板顺序；与东方财富炸板池口径不同，不强行合并。
+Wind 导出不含最高价字段，触板判定用通达信当日日线补齐；18 只样本缺少通达信日线文件，未纳入触板统计（占正常样本 0.36%）。
+连板高度与晋级
+今日梯队：3 板 2 只、2 板 9 只、首板 36 只，合计 47 只。
+昨日（10/16）梯队为 4 板 1、3 板 1、2 板 4、首板 55，合计 61 只。
+昨日板数 ↕ | 昨日只数 ↕ | 今日续板 ↕ | 未续板 ↕ | 说明 ↕ |
+4 板 | 1 | 0 | 0 | 冰山冷热断板，收 +2.36%，最高 8.37 未及涨停价 8.38 |
+3 板 | 1 | 0 | 1 | 新华文轩跌停 −9.99% |
+2 板 | 4 | 2 | 2 | 东方嘉盛、吉大正元晋级 3 板 |
+首板 | 55 | 9 | 46 | 9 只晋级 2 板，晋级率 16.36% |
+整体晋级情况：昨日 61 只涨停股中，今日仍有 11 只涨停（含 2 只 3 板、9 只 2 板），
+连板整体续板率约 18.03%（11/61）；首板晋级 2 板 9/55＝16.36%，2 板晋级 3 板 2/4＝50%。
+分母很小，2 板晋级率 50% 不足以说明接力环境改善。
+高位股反馈
+股票 ↕ | 昨日板数 ↕ | 今日收盘 ↕ | 今日涨跌 ↕ | 说明 ↕ |
+冰山冷热 | 4 板 | 7.80 | +2.36% | 断板；盘中最高 8.37，距涨停价 8.38 差 0.01 元，不计为触板或炸板 |
+新华文轩 | 3 板 | 25.33 | −9.99% | 跌停；教育出版方向负反馈 |
+这一项是本日最重要的反证来源：4 板股断板但未崩、3 板股直接跌停，说明高位股的负反馈是分方向的，
+不是整体性的。冰山冷热“差一分钱”不能记成触板或炸板——最高价 8.37 与涨停价 8.38 不等，按口径不构成触板。
+情绪周期判断
+描述性判断：急跌修复后的分歧。10/14、10/15 连续大幅走弱（上涨比例 17.55%、7.75%），10/16 明显修复（58.91%），
+今日回落到 42.91%，同时跌停从 10 只增至 24 只。这条序列更像“修复—分歧”，
+不支持把 10/16 与 10/19 直接解释为新一轮全面上涨。
+规则档位：退潮偏冷，0%—10%。触发条款为“跌停≥20只”。这是五档表中的第一档，属机械取值；
+本页不因描述性判断偏中性而上调，也不把“跌停扩散”夸大成全面退潮——广度仍在 42.91%、涨停仍有 47 只。
+
+## 板块与主线
+
+结论：今日不是一条主线，而是“容量方向普涨＋题材方向扩散＋旧高标退潮”的多线轮动。
+银行、军工、通信线缆、机器人相关、汽车前排各自有独立证据，但没有一条同时满足“广度＋核心身份＋梯队完整”。
+按站点规则，当日强势方向一律先记为观察，须跨日持续、核心身份可核、梯队完整三项齐备才升级为主线。
+申万三级行业（同一口径，样本≥8 只）
+查找 清除仅筛选本表，统计范围不变
+申万三级行业 ↕ | 样本 ↕ | 涨／跌／平 ↕ | 上涨比例 ↕ | 中位涨幅 ↕ | 成交额（亿元） ↕ | 涨停 ↕ |
+城商行Ⅲ | 17 | 17／0／0 | 100.00% | +1.71% | 76.69 | 0 |
+农商行Ⅲ | 10 | 10／0／0 | 100.00% | +1.27% | 22.90 | 0 |
+股份制银行Ⅲ | 9 | 9／0／0 | 100.00% | +0.95% | 92.46 | 0 |
+航天装备Ⅲ | 9 | 9／0／0 | 100.00% | +1.49% | 29.18 | 0 |
+通信线缆及配套 | 12 | 11／1／0 | 91.67% | +1.84% | 258.59 | 1 |
+地面兵装Ⅲ | 12 | 11／1／0 | 91.67% | +4.02% | 100.43 | 1 |
+航海装备Ⅲ | 10 | 9／1／0 | 90.00% | +2.63% | 62.91 | 0 |
+轮胎轮毂 | 21 | 17／4／0 | 80.95% | +1.03% | 27.47 | 1 |
+数字芯片设计 | 56 | 30／25／1 | 53.57% | +0.15% | 865.55 | 1 |
+印制电路板 | 46 | 19／27／0 | 41.30% | −0.73% | 740.35 | 3 |
+半导体设备 | 26 | 1／25／0 | 3.85% | −3.47% | 333.49 | 0 |
+大众出版 | 18 | 3／15／0 | 16.67% | −2.61% | 127.86 | 0 |
+教育出版 | 10 | 4／6／0 | 40.00% | −1.44% | 29.68 | 0 |
+水泥制造 | 13 | 5／8／0 | 38.46% | −0.32% | 28.34 | 0 |
+影视动漫制作 | 14 | 5／9／0 | 35.71% | −0.95% | 93.08 | 1 |
+中间产品及消费品供应链服务 | 8 | 2／6／0 | 25.00% | −1.28% | 12.67 | 1 |
+行业层级与 Wind 概念分别统计、并列解释，不合并成一个混合排名。表中行业按本页关注方向选取，不是全量排名。
+各方向的角色与阶段
+1）人形机器人（跨行业题材，不能用申万行业冒充成分）：当日报告按 Wind 概念原始 119 只、
+去重并剔除 2 只北交所与 2 只 ST 后得 115 只：83 涨、31 跌、1 平，上涨比例 72.17%，中位数 +2.19%，成交 636.24 亿元。
+核心＝宇树科技（+16.15%，成交 30.89 亿元，该名单内涨幅第 1、成交额第 3）；
+次核心＝绿的谐波（+5.81%）；容量＝三花智控（+3.91%，成交 18.88 亿元）。
+兆威机电、浙江荣泰为名单内两只涨停。正式龙二未确认：绿的谐波只是“强次核心”，
+能否算龙二需要看它是否在次日继续带动，而不是今天涨得多。
+阶段：扩散初期／修复升温，等待延续。跟风与补涨身份暂未确认，不贴标签。
+2）光通信线缆（申万三级，12 只）：11 涨 1 跌，中位数 +1.85%，成交 258.59 亿元（前一日 177.12 亿元，+46.00%）。
+核心兼容量＝亨通光电（涨停，成交 98.31 亿元）；中天科技 +5.41%、长飞光纤 +2.56% 有同业响应，属容量验证。
+正式龙二未确认。阶段：业绩推动的强修复（首板）。
+催化为亨通 10/17 公告预计前三季度归母净利 59.70—63.70 亿元、同比 +151.27%—168.10%（初步预计、未经审计），
+周末已披露，不属于今日盘中新发布。
+3）地面兵装（申万三级，12 只）：11 涨，中位数 +4.02%，成交 100.43 亿元（前一日 69.24 亿元）。
+领涨核心＝北方导航（+8.33%，盘中触板未封）；容量＝长城军工（+5.01%）、内蒙一机（+4.39%）。
+甘化科工二板，但成交额仅排该组第 7/12，不因板数封为龙头；龙二未确认。
+阶段：修复延续，细分强弱有变化。航空装备 46 只中 32 涨、中位 +1.29%，不如 10/16 整齐；
+航发科技冲高回落、收盘低于当日均价，洪都航空 −0.08%，说明“军工上涨”不等于核心股都在加速。
+4）汽车相关（申万汽车零部件 239 只）：147 涨、88 跌、4 平，中位数 +0.70%，成交 403.43 亿元；
+前一日为 206 涨、33 跌、中位 +2.12%。阶段核心＝万丰奥威（二板，在轮胎轮毂 21 只中涨幅与成交额均第 1，该组 17 涨 4 跌）；
+容量＝均胜电子（+1.48%，汽车零部件成交额第 1）。龙二未确认：
+东安动力、文灿股份、保隆科技同为二板，尚分不出统一龙二。江淮汽车 −1.34%、中鼎股份 −4.06% 说明首板不能照单接力。
+阶段：前排延续、整体分化。
+5）银行（容量方向，不是情绪方向）：城商行 17 只全部上涨、中位 +1.71%；农商行 10 只全部上涨；
+股份制银行 9 只全部上涨、中位 +0.95%。申万一级银行 42 只全部上涨、中位 +1.39%，成交 311.46 亿元，
+低于前一日 333.79 亿元。无已确认的情绪龙头／龙二，农行为当日较强容量股。
+阶段：普涨的容量方向，不能按连板接力解读。价格上涨但成交额下降，只能确认“普涨”，不能据此说大量新增资金入场。
+6）出版与传媒（旧高标退潮）：大众出版 18 只仅 3 只上涨、中位 −2.61%，3 只跌停；教育出版 10 只 4 涨 6 跌、中位 −1.44%，2 只跌停。
+新华传媒 +2.77%、成交 39.96 亿元（前一日 2.47 亿元），正式结束此前经核验的涨停序列，属“大换手断板但仍有承接”；
+慈文传媒从跌停价 8.40 拉到 10.26 涨停（14:52 首次触板），是旧强股的强反包。
+没有新确认的统一龙头／龙二，文轩、读者、出版传媒继续掉队。
+阶段：退潮，个别核心修复。不能用慈文一个反包证明传媒整体恢复。
+7）水泥制造（13 只）：5 涨 8 跌，中位 −0.32%，成交 28.34 亿元（前一日 38.28 亿元）。
+前一日 13 只全部上涨的扩散没有延续：福建水泥 +2.51% 相对强，海螺水泥 −1.07%，尖峰集团 −8.30%。
+尖峰的延续假设失效，福建尚未证明能接任新龙头。阶段：修复未延续。
+消息刺激：来源、时间、强度与受益关系
+商务部“科技兴商”意见（新，可核）：商务部官网页面标注 2026-10-19 10:12 公开，公文落款 10/13，
+包含机器人等智能商品及具身智能技术应用方向。落款时间不能当作市场已知时间。
+强度判断：方向性支持，不是订单——文件支持应用前景，不等于具体公司当日拿到订单。
+宇树当日 10:00 已到 454 元（较前收 +6.33%），10:12 为 454.91，收盘 495.92，
+说明上午已先走强、下午再有增强，不能把全部涨幅归因于 10:12 的政策。
+人形机器人国家标准（旧闻，不重复计入）：官方平台显示发布日期 2026-09-28、实施日 2027-04-01，
+属旧信息，不能当作今日新刺激。
+亨通光电业绩预告（新，但已在周末披露）：10/17 公告，预计前三季度归母净利同比 +151.27%—168.10%。
+这是公司层面的具体业绩支撑，强于泛泛的政策预期；但周末已公开，不算今日盘中新增。
+宏观背景：国家统计局 10/19 10:00 发布前三季度 GDP 同比 +4.6%、三季度 +4.5%。
+本轮未核实一致预期，因此不称“超预期/低于预期”，也不从 GDP 数字直接推导个股应上涨。
+未核实的部分：本轮没有取得可与“军工细分走强”“汽车前排延续”一一对应的首发公告证据，
+这两条只作为市场关注方向记录，不称为已验证催化。
+
+## 次日计划
+
+前置结论：10月19日收盘时，本项目没有新增证据完整的条件单；原 10/19 尖峰计划已按原取消条款记为取消，不按今天更低的价格重写旧计划。
+下表是当日报告发布的分组研究清单，本页保留原始条件，不补写新的阈值或窗口；
+观察名单不等于买入建议，也不推定用户持仓或实盘成交。
+优先级 1人形机器人：宇树科技、绿的谐波、三花智控（及 115 只同口径成员）
+入选理由 | 当日广度 72.17%、中位 +2.19%、成交 636.24 亿元，是当日最强扩散；宇树为带动核心，绿的谐波、三花有验证作用。 |
+观察条件 | 核心保持承接；同口径成员广度维持；容量股能跟；催化与公司业务之间能找到可核对的传导。 |
+触发条件 | 未形成。当日未给出触发价、确认窗口与执行报价核验要求，属研究观察，不是条件单。 |
+失效条件 | 宇树独涨、成员明显掉队，或高开后核心承接转弱 → 仍按短修复看，不升级为主线。 |
+主要风险 | 概念名单含主营较宽的公司，概念标签不等于机器人业务已贡献利润；两日修复只是收复 9/21 以来的回撤。 |
+优先级 2地面兵装：北方导航、长城军工、内蒙一机（另看甘化科工的高度与成交是否匹配）
+入选理由 | 12 只中 11 涨、中位 +4.02%、成交放大到 100.43 亿元，两日修复有延续。 |
+观察条件 | 领涨与容量股共同保持，细分参与度不明显收缩。 |
+触发条件 | 未形成。甘化科工二板但成交额仅排该组第 7/12，不能据板数封为龙头。 |
+失效条件 | 只有单个高弹性股维持强势，或航空等分支继续走弱 → 军工整体不升级。 |
+主要风险 | 未核实到足以解释整个分支的新订单等直接盈利事件；地缘与产业预期只作线索。 |
+优先级 3汽车相关：万丰奥威、均胜电子及同题材成员
+入选理由 | 万丰二板、轮胎轮毂组内涨幅与成交额双第 1；均胜为汽车零部件成交额第 1，有容量配合。 |
+观察条件 | 万丰阶段强势有同业和容量配合，普通成员参与重新扩大。 |
+触发条件 | 未形成。当日明确“不把二板当作可追买点”，没有给出回踩价位与确认结构。 |
+失效条件 | 万丰单独强、汽车广度继续收窄 → 降级为单股行情。 |
+主要风险 | 汽车零部件中位由 +2.12% 降至 +0.70%，广度收窄；江淮汽车、中鼎股份已给出掉队样本。 |
+观察光通信线缆：亨通光电、中天科技、长飞光纤
+入选理由 | 业绩预告 + 首板涨停 + 同业响应，是本日最“有具体业绩”的方向。 |
+观察条件 | 业绩公告后第二天同业继续响应，核心承接未破坏。 |
+触发条件 | 未形成。首板修复不等于首次分歧买点，原报告未给出条件。 |
+失效条件 | 只有亨通单只强，或行业广度、容量同步转弱 → 降为单股催化。 |
+主要风险 | 业绩预告为初步预计、未经审计；周末已披露，不属当日盘中新增。 |
+观察反包与高位断板：慈文传媒、新华传媒
+入选理由 | 慈文从跌停价拉到涨停，新华传媒大换手断板但仍收 +2.77%，旧高标仍有承接。 |
+观察条件 | 反包出现更多独立样本，且同题材有响应；旧强股负反馈停止扩散。 |
+触发条件 | 未形成。反包本身不是策略信号，需要独立样本与同题材响应共同成立。 |
+失效条件 | 只有慈文一个强案例、其他旧核心继续跌停 → 不把反包当普遍策略。 |
+主要风险 | 旧分歧不重置；出版方向当日 3 只跌停，退潮未结束。 |
+观察高度股：东方嘉盛、吉大正元（均 3 板）
+入选理由 | 当日市场最高板，是接力环境最直接的观察点。 |
+观察条件 | 两只能否带动各自窄题材；东方所在三级行业仅 2/8 涨、中位 −1.28%，吉大今日一字且成交额排名靠后，均需次日修复。 |
+触发条件 | 未形成。不因“市场最高板”自动确认龙头身份。 |
+失效条件 | 窄题材无响应、成交额继续偏小 → 维持观察，不升级。 |
+主要风险 | 一字板无法验证承接；同组参与度低，高度与容量分离。 |
+“优先级”是当日报告的研究排序，不是仓位分配；同一对象不得因为出现在本页就视为已获买入资格。六只对象全部没有触发条件，这是当日的事实，不是遗漏。
+三种盘面情景下的应对
+参与继续改善：上涨面、中位数与昨日涨停股反馈一起改善后，再看上述方向哪条线由核心、容量到跟风共同扩散。
+只有一条持续胜出才列为当日主线；两三条交替而无一条占优，继续叫轮动。
+指数稳但个股分化：银行等容量方向托住指数、短线无一致性时，结论仍是结构性行情；
+重点看核心股承接，不把指数稳定误读成普遍机会。
+高位负反馈扩大、低位新线也走弱：若跌停与断板负反馈扩散、新方向没有承接，向防守/无清晰主线调整；
+纯龙头路径没有合格结构就保持空仓研究，不为“每天要有计划”硬找标的。
+明日研究重点不是预先押某个板块，而是观察哪条线先通过“市场参与—题材扩散—核心身份—分歧承接”这条证据链。
+
+## 昨日名单回顾
+
+本节只复核本项目在 10月16日 实际发布的名单与原条件。当日名单由两部分构成：
+1 只完整条件候选（尖峰集团）与 14 只观察对象。观察对象在原报告中只有“看什么”，
+没有触发价、没有失效条件，因此本节不追认任何触发或成交，也不替原报告补写阈值。
+完整条件候选（唯一）尖峰集团 600668
+原条件 | 回踩 8.63—8.79 后，出现两根完成分钟收回 8.79 及实时累计均价上方；任意实际价格先破 8.34 即取消。 |
+今日实际 | 开 8.48（已低于 8.63），最高 8.65（未到 8.79），最低 7.99（已破 8.34），收 8.06（−8.30%）。 |
+判定 | 取消。取消线 8.34 先被击穿，确认路径从结构上不可能完整发生。 |
+成交状态 | 成交未确认（研究阶段未下单）。 |
+观察（无触发条件）新华传媒 600825
+原身份 | 原报告列为观察对象，未给出触发价与失效条件。 |
+今日实际 | 15.58（+2.77%），成交 39.96 亿元，正式断板，仍有承接。 |
+判定 | 不适用（无触发条件）；不追认触发。 |
+成交状态 | 成交未确认。 |
+观察（无触发条件）新华文轩 601811
+原身份 | 观察对象，无触发条件。 |
+今日实际 | 25.33（−9.99%）跌停。 |
+判定 | 不适用；记录为负反馈，不追认为交易结果。 |
+成交状态 | 成交未确认。 |
+观察（无触发条件）百洋股份 002696
+原身份 | 观察对象，无触发条件。 |
+今日实际 | 8.69（−10.04%）跌停。 |
+判定 | 不适用；负反馈。 |
+成交状态 | 成交未确认。 |
+观察（无触发条件）慈文传媒 002343
+原身份 | 观察对象，无触发条件。 |
+今日实际 | 10.26（+9.97%）涨停，盘中最低 8.40 即当日跌停价，尾盘反包。 |
+判定 | 不适用；反包是方向验证，不是买点确认。 |
+成交状态 | 成交未确认。 |
+观察（无触发条件）冰山冷热 000530
+原身份 | 观察对象，无触发条件。 |
+今日实际 | 7.80（+2.36%）断板，最高 8.37，未及涨停价 8.38。 |
+判定 | 不适用；不计为触板或炸板。 |
+成交状态 | 成交未确认。 |
+观察（无触发条件）万丰奥威 002085
+原身份 | 观察对象，无触发条件。 |
+今日实际 | 10.90（+9.99%）二板。 |
+判定 | 不适用；涨停只记观察对象后续路径，不算本项目买到。 |
+成交状态 | 成交未确认。 |
+逐条说明
+尖峰集团：原计划应取消，不能延续到明天“再等等”。原条件要求先回踩 8.63—8.79，
+再出现两根完成分钟回到 8.79 及均价上方；任意实际价格先破 8.34 即取消。今日开盘 8.48 已在回踩区间下方，
+全天最高 8.65 未到 8.79，最低 7.99 明确击穿 8.34，收 8.06。
+取消条款先被触发，确认路径从结构上不可能完整发生。
+本页用日线核对到“最低 7.99 本页未重跑分钟数据，取消时点以原报告为准。
+需要同时承认两件事：原条件把不合格路径拦住了，这是执行纪律的有效性；
+但昨晚把尖峰列为唯一条件候选的方向判断没有得到市场验证。不能用“没有触发”掩盖候选判断没有成功，
+也不能凭这一个样本宣称策略已经有效。
+14 只观察对象：原报告未给出逐只触发与失效条件，本节只能登记“观察”，
+不把当日涨跌追认为交易结果。上表列出的是当日报告已逐只核对、且本页用 Wind/通达信数据复核过价格的对象；
+其余观察对象未在可核文件中逐只复原，列入第六节的数据缺口，不猜补名单。
+状态分层（严格区分）
+观察：14 只，全部停留在观察层，无触发登记。
+价格触及：0 只。尖峰今日最高 8.65 未达确认价 8.79，不构成价格触及。
+有效触发：0 只。
+实际成交：成交未确认。本项目为研究阶段，用户明确不下单。
+冰山冷热当日最高 8.37、涨停价 8.38，差 0.01 元，按口径不计为触板或炸板；
+若按“接近涨停”处理会污染封板率统计。
+
+## 证据与缺口
+
+使用的数据与来源
+主行情：全部A股1019.xlsx（本地 Wind 导出，桌面“数据”文件夹）。逐行字段完整，
+申万一级/三级、交易状态、风险警示板、涨跌幅、前收、涨停价、跌停价均无缺失；涨跌幅与“现价/前收−1”无冲突。
+前一交易日：全部A股1016.xlsx，用于昨日涨停股反馈与连板回溯。
+日线与指数：C:/new_tdx/vipdoc（通达信），用于补齐 Wind 缺失的最高/最低价、触板判定与指数涨跌。
+当日已发布报告：盘后复盘-20261019.md（本项目当日形成的盘后报告），
+用于昨日计划原文、方向角色判断与催化来源；本页数字已用行情文件独立复核。
+统计口径
+正常沪深样本：代码以 .SH/.SZ 结尾 × 交易状态＝正常交易 × 风险警示板＝否 × 现价/前收/成交额/成交量均大于 0。
+涨停／跌停：现价与涨停价／跌停价之差小于 0.005 元，且名称不以 N/C 开头。
+封板比例＝收盘涨停 ÷（收盘涨停＋最高价触及涨停但未封住），不含逐笔封板顺序。
+昨日涨停股反馈：以前一交易日收盘涨停名单为固定样本，逐只取今日涨跌幅，不是同一组合的连续收益。
+行业层级与概念名单分别统计，不合并排名；行业指数不替代成分股广度。
+数据缺口与影响
+上证指数：本地通达信上证日线缓存止于 2026-08-14，本页上证点位与涨跌取自当日报告引用的 Wind 收盘快照，
+未用过期文件冒充。影响：上证分时结构无法复核，但广度与中位数不依赖该指数。
+Wind 导出无最高价：触板与封板比例改由通达信日线补齐，其中 18 只缺少通达信文件
+（占正常样本 0.36%）。影响：封板率可能被低估或高估 0—18 只的幅度，不足以改变 67% 这一档判断。
+10月9日、10月12日无全市场导出：这两个交易日没有可核的 Wind 快照，站点未为它们建页。
+影响：10/13 的连板回溯与晋级率分母存在缺口；本页 10/16→10/19 为直接相邻交易日，不受影响。
+10月16日的 14 只观察名单未逐只复原：当日报告以网页快照形式留存，未提供结构化的代码-条件表，
+本页只复核了能在行情文件中确认的对象。影响：无法统计 14 只的整体反馈，因此不给出“昨日名单整体表现”的结论。
+未核实：军工细分走强、汽车前排延续的首发公告证据；金融街论坛讲话的盘中公开时点；
+融资余额为 T-1 背景（截止 10/16，余额 24,597.06 亿元、净额 −144.90 亿元），不是当日盘中统计。
+方法边界
+本页是按当日收盘数据与当日已发布报告整理的历史复盘页，不是当日盘中的实时判断，也不是对未来的预测。
+观察、价格触及、有效触发与实际成交分别记录；没有成交凭据即写“成交未确认”。
+仓位数字是站点五档表的机械取值，不绑定账户资金，不推定用户持仓。
+
+&gt; 数据源：本地 Wind 全市场导出《全部A股1019.xlsx》、通达信日线与当日已发布报告；口径与站点历史页一致。
+</textarea><script>document.querySelectorAll('[data-table-block]').forEach(block=>{const rows=[...block.querySelectorAll('tbody tr')],input=block.querySelector('.table-search'),count=block.querySelector('.table-count'),clear=block.querySelector('.clear-filter');const filter=()=>{let q=(input?.value||'').trim().toLowerCase(),n=0;rows.forEach(r=>{const show=r.textContent.toLowerCase().includes(q);r.hidden=!show;if(show)n++});if(count)count.textContent=`显示 ${n} / ${rows.length} 项`;};if(input){input.addEventListener('input',filter);clear.addEventListener('click',()=>{input.value='';filter();input.focus()});filter()}block.querySelectorAll('.sort').forEach((b,index)=>{let dir=1;b.addEventListener('click',()=>{const body=block.querySelector('tbody');rows.sort((a,b)=>{let x=a.cells[index].textContent.trim(),y=b.cells[index].textContent.trim(),nx=Number(x.replace(/[,%元]/g,'')),ny=Number(y.replace(/[,%元]/g,''));return dir*((x&&y&&Number.isFinite(nx)&&Number.isFinite(ny))?nx-ny:x.localeCompare(y,'zh-CN'));});rows.forEach(r=>body.appendChild(r));dir*=-1;filter();})})});document.getElementById('download').addEventListener('click',()=>{let url=URL.createObjectURL(new Blob([document.getElementById('md-source').value],{type:'text/markdown;charset=utf-8'}));let a=document.createElement('a');a.href=url;a.download='盘后复盘-20261019.md';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000)});document.getElementById('print').addEventListener('click',()=>window.print());</script></body></html>

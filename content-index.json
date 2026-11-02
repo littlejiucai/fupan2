@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-02T21:15:31+08:00",
-  "updatedAt": "2026-11-02T21:15:31+08:00",
+  "version": "2026-11-02T23:16:00+08:00",
+  "updatedAt": "2026-11-02T23:16:00+08:00",
   "timezone": "Asia/Shanghai",
   "reviews": [
     {
@@ -19,11 +19,18 @@
       ],
       "leaderState": {
         "state": "龙",
-        "reason": "青岛食品六板，确立空间高度；消费题材带动仍待核验。襄阳轴承属于前期龙头反包，操作等待合适路径。",
-        "suggestedPct": 20,
+        "reason": "青岛食品是六板空间核心，消费题材带动待确认；主策略等待合适机会，暂未形成练手计划。强修复环境参考仓位30%—50%。",
+        "suggestedPct": null,
         "practiceCapPct": 20,
         "assessedAt": "2026-11-02T21:15:27+08:00",
-        "basis": "11月2日收盘复盘"
+        "basis": "11月2日收盘复盘",
+        "displayState": "有空间核心",
+        "environmentReferencePct": [
+          30,
+          50
+        ],
+        "operationStatus": "主策略等待；暂未形成练手计划",
+        "clarifiedAt": "2026-11-02T23:16:00+08:00"
       }
     },
     {

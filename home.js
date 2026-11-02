@@ -16,7 +16,7 @@ function applyArchiveFilter(){const q=$('#archive-search').value.trim().toLowerC
 function applyEssayFilter(){const q=$('#essay-search').value.trim().toLowerCase();let count=0;document.querySelectorAll('.essay-card').forEach(card=>{card.hidden=!(category==='全部'||card.dataset.category===category)||!card.dataset.search.includes(q);if(!card.hidden)count++});$('#essay-count').textContent=`显示 ${count} / ${content.articles.length} 篇研究笔记`;$('#essay-empty').hidden=count>0}
 function render(data){
  content=data;const sorted=[...data.reviews].sort((a,b)=>b.date.localeCompare(a.date)),r=sorted[0];
- const fields={shortDate:dotDate(r.date.slice(5)),year:r.date.slice(0,4),yearMonth:r.date.slice(0,7).replace('-',' / '),day:r.date.slice(8),title:r.title,summary:r.summary,strategyState:r.leaderState?.state||'待判断',strategyAsOf:`截至${r.date}收盘`,strategyReason:r.leaderState?.reason||'本日策略状态待补充，请查看当日复盘。'};
+ const fields={shortDate:dotDate(r.date.slice(5)),year:r.date.slice(0,4),yearMonth:r.date.slice(0,7).replace('-',' / '),day:r.date.slice(8),title:r.title,summary:r.summary,strategyState:r.leaderState?.displayState||r.leaderState?.state||'待判断',strategyAsOf:`截至${r.date}收盘`,strategyReason:r.leaderState?.reason||'本日策略状态待补充，请查看当日复盘。'};
  document.querySelectorAll('[data-latest]').forEach(e=>e.textContent=fields[e.dataset.latest]);
  document.querySelectorAll('[data-latest-link]').forEach(e=>e.setAttribute('href',r.href));
  $('#latest-cutoff').textContent=`数据截至 ${dotDate(r.date.slice(5))} ${r.dataCutoff?r.dataCutoff.slice(11,16):'时间待补充'} · 北京时间`;

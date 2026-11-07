@@ -1,9 +1,33 @@
 {
   "schemaVersion": 1,
-  "version": "2026-11-05T20:29:17+08:00",
-  "updatedAt": "2026-11-05T20:29:17+08:00",
+  "version": "2026-11-06T23:37:35+08:00",
+  "updatedAt": "2026-11-06T23:37:35+08:00",
   "timezone": "Asia/Shanghai",
   "reviews": [
+    {
+      "date": "2026-11-06",
+      "title": "潮落高标立，回暖待成势",
+      "summary": "低开后修复未扩散，科技容量回落，五板高度仍在。逐项核对昨日预案，给出周一两张纸面条件卡。",
+      "href": "./review-20261106.html",
+      "dataCutoff": "2026-11-06T15:00:00+08:00",
+      "publishedAt": null,
+      "formedAt": "2026-11-06T23:37:35+08:00",
+      "tags": [
+        "普跌退潮",
+        "五板高度",
+        "周一预案"
+      ],
+      "leaderState": {
+        "state": "空",
+        "displayState": "高度核心已出现 · 主策略等待",
+        "reason": "浙文影业与闽发铝业五板，主线和可参与的龙头资格待确认。主策略新增0%。纸面练手满足条件后单票首笔5%，合计上限20%。",
+        "operationStatus": "主策略等待",
+        "practiceCapPct": 20,
+        "suggestedPct": null,
+        "plannedPct": 0,
+        "assessedAt": "2026-11-06T23:37:35+08:00"
+      }
+    },
     {
       "date": "2026-11-05",
       "title": "春意仍浓换新枝，旧帆回落看新旗",
@@ -20,11 +44,14 @@
       "leaderState": {
         "state": "空",
         "displayState": "新周期龙头待确认 · 主策略等待",
-        "reason": "浙文影业、闽发铝业为四板高度观察；传媒与光伏扩散，但持续带动和可参与路径未同时确认。练手上限20%，本页未启动。",
+        "reason": "新周期龙头待确认，主策略尚未形成可参与计划；策略计划仓位0%。练手未启用，允许上限20%。确认主线、龙头资格及完整参与退出条件后再调整。此为研究计划，非账户持仓。",
         "operationStatus": "主策略等待",
         "practiceCapPct": 20,
         "suggestedPct": null,
-        "assessedAt": "2026-11-05T20:29:17+08:00"
+        "assessedAt": "2026-11-05T20:29:17+08:00",
+        "plannedPct": 0,
+        "positionBasis": "研究计划，非账户持仓",
+        "positionExplanationUpdatedAt": "2026-11-06T09:23:38+08:00"
       }
     },
     {
